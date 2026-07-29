@@ -1,0 +1,54 @@
+=========================================
+Project : Smart Water Tank Monitoring System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. Ultrasonic Sensor (HC-SR04)
+3. Push Button
+4. LED
+5. Piezo Buzzer
+6. 220Ω Resistor
+7. Jumper Wires
+
+Connections
+-----------
+
+Ultrasonic Sensor
+
+VCC -------------> Arduino 5V
+GND -------------> Arduino GND
+TRIG ------------> Arduino D9
+ECHO ------------> Arduino D10
+
+Push Button
+
+One Terminal ----> Arduino D2
+Other Terminal --> Arduino GND
+
+LED
+
+Arduino D8 ------> 220Ω Resistor
+220Ω Resistor ---> LED Anode (Long Leg)
+LED Cathode -----> Arduino GND
+
+Piezo Buzzer
+
+Positive (+) ----> Arduino D7
+Negative (-) ----> Arduino GND
+
+Working
+-------
+
+Distance > 15 cm (Low Water Level)
+OR
+Button Pressed
+
+→ LED ON
+→ Buzzer ON
+
+Otherwise
+
+→ LED OFF
+→ Buzzer OFF
