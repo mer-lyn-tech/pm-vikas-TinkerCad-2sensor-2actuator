@@ -1,0 +1,73 @@
+=========================================
+Project : Smart Room Cooling System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. TMP36 Temperature Sensor
+3. Photoresistor (LDR)
+4. Servo Motor
+5. LED
+6. 10kΩ Resistor
+7. 220Ω Resistor
+8. Breadboard
+9. Jumper Wires
+
+Connections
+-----------
+
+TMP36
+
+Left Pin -------------> Arduino 5V
+
+Middle Pin -----------> Arduino A1
+
+Right Pin ------------> Arduino GND
+
+
+Photoresistor (LDR)
+
+One Leg -------------> Arduino 5V
+
+Other Leg -----------> Arduino A0
+
+10kΩ Resistor
+
+One End -------------> Arduino A0
+
+Other End -----------> Arduino GND
+
+
+Servo Motor
+
+Red Wire ------------> Arduino 5V
+
+Brown Wire ----------> Arduino GND
+
+Orange Wire ---------> Arduino D9
+
+
+LED
+
+Arduino D8 ----------> 220Ω Resistor
+
+220Ω Resistor -------> LED Anode (Long Leg)
+
+LED Cathode ---------> Arduino GND
+
+
+Working
+-------
+
+Temperature > 30°C and LDR > 500
+
+Servo rotates to 90°
+
+LED turns ON
+
+Otherwise
+
+Servo returns to 0°
+
+LED turns OFF
