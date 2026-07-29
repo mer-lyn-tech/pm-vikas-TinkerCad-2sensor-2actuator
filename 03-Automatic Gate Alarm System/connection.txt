@@ -1,0 +1,52 @@
+=========================================
+Project : Automatic Gate Alarm
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. Ultrasonic Sensor (HC-SR04)
+3. PIR Motion Sensor
+4. Servo Motor
+5. Piezo Buzzer
+6. Jumper Wires
+
+Connections
+-----------
+
+Ultrasonic Sensor
+
+VCC -------------> Arduino 5V
+GND -------------> Arduino GND
+TRIG ------------> Arduino D9
+ECHO ------------> Arduino D10
+
+PIR Sensor
+
+VCC -------------> Arduino 5V
+OUT -------------> Arduino D2
+GND -------------> Arduino GND
+
+Servo Motor
+
+Red Wire --------> Arduino 5V
+Brown Wire ------> Arduino GND
+Orange Wire -----> Arduino D6
+
+Piezo Buzzer
+
+Positive (+) ----> Arduino D8
+Negative (-) ----> Arduino GND
+
+Working
+-------
+
+Object within 15 cm
+→ Servo rotates to 90° (Gate Opens)
+
+Motion detected
+→ Buzzer turns ON
+
+Otherwise
+→ Servo returns to 0°
+→ Buzzer turns OFF
