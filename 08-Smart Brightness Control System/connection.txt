@@ -1,0 +1,59 @@
+=========================================
+Project : Smart Brightness Control System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. Photoresistor (LDR)
+3. Potentiometer
+4. RGB LED (Common Cathode)
+5. Piezo Buzzer
+6. 10kΩ Resistor
+7. Three 220Ω Resistors
+8. Breadboard
+9. Jumper Wires
+
+Connections
+-----------
+
+LDR
+
+One Leg -------------> Arduino 5V
+Other Leg -----------> Arduino A0
+
+10kΩ Resistor
+
+One End -------------> Arduino A0
+Other End -----------> Arduino GND
+
+Potentiometer
+
+Left Pin ------------> Arduino 5V
+Middle Pin ----------> Arduino A1
+Right Pin -----------> Arduino GND
+
+RGB LED
+
+Red Pin -------------> Arduino D9 through 220Ω
+Green Pin -----------> Arduino D10 through 220Ω
+Blue Pin ------------> Arduino D11 through 220Ω
+Common Cathode ------> Arduino GND
+
+Piezo Buzzer
+
+Positive (+) --------> Arduino D8
+Negative (-) --------> Arduino GND
+
+Working
+-------
+
+Dark (LDR < Threshold)
+
+→ RGB LED Red
+→ Buzzer ON
+
+Bright (LDR ≥ Threshold)
+
+→ RGB LED Green
+→ Buzzer OFF
