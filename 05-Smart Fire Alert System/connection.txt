@@ -1,0 +1,53 @@
+=========================================
+Project : Smart Fire Alert System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. TMP36 Temperature Sensor
+3. Push Button
+4. LED
+5. Piezo Buzzer
+6. 220Ω Resistor
+7. Jumper Wires
+
+Connections
+-----------
+
+TMP36
+
+Left Pin -------------> Arduino 5V
+Middle Pin -----------> Arduino A0
+Right Pin ------------> Arduino GND
+
+Push Button
+
+One Terminal ---------> Arduino D2
+Other Terminal -------> Arduino GND
+
+LED
+
+Arduino D8 -----------> 220Ω Resistor
+220Ω Resistor --------> LED Anode (Long Leg)
+LED Cathode ----------> Arduino GND
+
+Piezo Buzzer
+
+Positive (+) ---------> Arduino D9
+Negative (-) ---------> Arduino GND
+
+Working
+-------
+
+Temperature > 30°C
+OR
+Push Button Pressed
+
+→ LED ON
+→ Buzzer ON
+
+Otherwise
+
+→ LED OFF
+→ Buzzer OFF
