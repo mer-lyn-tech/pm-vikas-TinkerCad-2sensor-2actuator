@@ -1,0 +1,62 @@
+=========================================
+Project : Smart Garage Parking System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. Ultrasonic Sensor (HC-SR04)
+3. Photoresistor (LDR)
+4. Servo Motor
+5. LED
+6. 10kΩ Resistor
+7. 220Ω Resistor
+8. Breadboard
+9. Jumper Wires
+
+Connections
+-----------
+
+Photoresistor (LDR)
+
+One Leg -------------> Arduino 5V
+Other Leg -----------> Arduino A0
+
+10kΩ Resistor
+
+One End -------------> Arduino A0
+Other End -----------> Arduino GND
+
+Ultrasonic Sensor
+
+VCC -----------------> Arduino 5V
+GND -----------------> Arduino GND
+TRIG ----------------> Arduino D9
+ECHO ----------------> Arduino D10
+
+Servo Motor
+
+Red Wire ------------> Arduino 5V
+Brown Wire ----------> Arduino GND
+Orange Wire ---------> Arduino D6
+
+LED
+
+Arduino D8 ----------> 220Ω Resistor
+220Ω Resistor -------> LED Anode (Long Leg)
+LED Cathode ---------> Arduino GND
+
+Working
+-------
+
+Distance < 15 cm
+AND
+LDR > 500
+
+→ Servo rotates to 90°
+→ LED turns ON
+
+Otherwise
+
+→ Servo returns to 0°
+→ LED turns OFF
