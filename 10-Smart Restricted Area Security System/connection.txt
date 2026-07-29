@@ -1,0 +1,52 @@
+=========================================
+Project : Smart Restricted Area Security System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. PIR Motion Sensor
+3. Push Button
+4. Servo Motor
+5. Piezo Buzzer
+6. Jumper Wires
+
+Connections
+-----------
+
+PIR Motion Sensor
+
+VCC -------------> Arduino 5V
+GND -------------> Arduino GND
+OUT -------------> Arduino D2
+
+Push Button
+
+One Terminal ----> Arduino D3
+Other Terminal --> Arduino GND
+
+Servo Motor
+
+Red Wire --------> Arduino 5V
+Brown Wire ------> Arduino GND
+Orange Wire -----> Arduino D6
+
+Piezo Buzzer
+
+Positive (+) ----> Arduino D8
+Negative (-) ----> Arduino GND
+
+Working
+-------
+
+Motion Detected
+OR
+Push Button Pressed
+
+→ Servo rotates to 90°
+→ Buzzer ON
+
+Otherwise
+
+→ Servo returns to 0°
+→ Buzzer OFF
