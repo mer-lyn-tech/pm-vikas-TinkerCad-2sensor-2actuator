@@ -1,0 +1,53 @@
+=========================================
+Project : Smart Entry Control System
+=========================================
+
+Components Used
+---------------
+1. Arduino UNO
+2. Ultrasonic Sensor (HC-SR04)
+3. Push Button
+4. Servo Motor
+5. LED
+6. 220Ω Resistor
+7. Jumper Wires
+
+Connections
+-----------
+
+Ultrasonic Sensor
+
+VCC -------------> Arduino 5V
+GND -------------> Arduino GND
+TRIG ------------> Arduino D9
+ECHO ------------> Arduino D10
+
+Push Button
+
+One Terminal ----> Arduino D2
+Other Terminal --> Arduino GND
+
+Servo Motor
+
+Red Wire --------> Arduino 5V
+Brown Wire ------> Arduino GND
+Orange Wire -----> Arduino D6
+
+LED
+
+Arduino D8 ------> 220Ω Resistor
+220Ω Resistor ---> LED Anode (Long Leg)
+LED Cathode -----> Arduino GND
+
+Working
+-------
+
+Object within 15 cm + Button Pressed
+
+Servo rotates to 90°
+LED turns ON
+
+Otherwise
+
+Servo returns to 0°
+LED turns OFF
